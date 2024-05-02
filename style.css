@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+   text-align: center;
+   margin-top: 20px;
+   color: red;
+   font-size: 40px;
+}
+span{
+    color: black;
+}
+.shib-link {
+    width: 200px;
+    height: 300px;
+    background-color: #252525;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    filter: drop-shadow(0 0 50px yellow);
+    animation: updown 2s infinite alternate;
+}
+@keyframes updown {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+.lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 40%;
+}
+.lines .bar1 {
+    width: 100px;
+    height: 12px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+.lines .bar2 {
+    width: 100px;
+    height: 12px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+.lines .bar3 {
+    width: 100px;
+    height: 12px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid yellow;
+    position: absolute;
+}
+.bottom-fill{
+    background-color: #252525;
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    top: 95%;
+    left: -49%;
+    border-radius: 30px 30px 150px 150px;
+    border-top: 5px solid rgba(44, 44, 44, 0.8);
+    border-left: 5px solid rgba(44, 44, 44, 0.8);
+    border-right: 5px solid rgba(44, 44, 44, 0.8);
+    border-bottom: 5px solid rgba(44, 44, 44, 0.8);
+}
